@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animació de lletres HELLRAISER"</title>
+	<style>
+		/*TAULES*/
+        .taula {
+            text-align: center;
+            margin: 0 auto;
+                display: flex;
+            justify-content: center;
+        }
+        
+        td {
+            width: 100px;
+            height: 100px;
+            font-size: 5em;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .un {
+            background-color: rgb(48, 23, 187);
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .dos {
+            background-color: rgb(70, 156, 35);
+            animation-delay: 0.1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .tres {
+            background-color: rgb(197, 116, 40);
+            animation-delay: 0.2s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .quatre {
+            background-color: rgb(201, 26, 70);
+            animation-delay: 0.3s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .cinc {
+            background-color: rgb(75, 143, 19);
+            animation-delay: 0.4s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .sis {
+            background-color: rgb(204, 57, 31);
+            animation-delay: 0.5s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .set {
+            background-color: rgb(44, 36, 151);
+            animation-delay: 0.6s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .vuit {
+            background-color: rgb(77, 18, 64);
+            animation-delay: 0.7s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .nou {
+            background-color: rgb(34, 167, 167);
+            animation-delay: 0.8s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        .deu {
+            background-color: rgb(41, 153, 92);
+            animation-delay: 0.9s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+            transform-origin: center;
+        }
+
+        @keyframes example {
+            0% {transform: rotate(0deg);}
+            50% {transform: rotate(180deg);}
+            100% {transform: rotate(360deg);}
+        } 
+
+        /* Estil de les barres */
+		.barra {
+			width: 600px;
+			height: 50px;
+			background-color: #FF0000;
+            border: 2px solid #000;
+			margin-right: 5px;
+			display: inline-block;
+			animation-name: crecer;
+            animation-timing-function: linear;
+			animation-duration: 0.2s;
+			animation-timing-function: ease-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+            margin: 0 auto;
+                display: flex;
+            justify-content: center;
+            
+        }
+
+        .efecte {
+			width: 600px;
+			height: 50px;
+			background-color: #FF0000;
+            border: 2px solid #000;
+			margin-right: 5px;
+			display: inline-block;
+			animation-name: efecte;
+			animation-duration: 0.2s;
+			animation-timing-function: ease-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+            margin: 0 auto;
+                display: flex;
+            justify-content: center;
+        }
+
+		/* Animació*/
+		@keyframes crecer {
+		
+            0%   {background-color:rgb(132, 255, 0);}
+            25%  {background-color:rgb(0, 60, 255);}
+            50%  {background-color:rgb(255, 77, 0);}
+            75%  {background-color:rgb(128, 0, 117);}
+            100% {background-color:red;}
+		}
+
+        @keyframes efecte {
+		
+        0%   {background-color:rgb(23, 209, 147);}
+        25%  {background-color:rgb(161, 38, 155);}
+        50%  {background-color:rgb(99, 13, 38);}
+        75%  {background-color:rgb(234, 238, 32);}
+        100% {background-color:rgb(189, 215, 236);}
+    }
+
+
+
+        .iframe{
+            margin: 0 auto;
+                display: flex;
+            justify-content: center;
+            transition: none;
+        }
+
+        .audio{
+            margin: 0 auto;
+                display: flex;
+            justify-content: center;
+            transition: none;
+        }
+        .video{
+            margin: 0 auto;
+                display: flex;
+            justify-content: center;
+            transition: none;
+        }
+        .icono{
+    max-width:10%;
+  max-height:10%;
+  position: relative;
+  animation-timing-function: linear;
+  animation: nave 10s infinite;
+  margin: 0 auto;
+    display: flex;
+  justify-content: center;
+}
+
+@keyframes nave {
+    to {width: 700px;}
+  0% {right:100px; left:100px;}
+  25% {left:100px; left:200px;}
+  50% {left:200px; left:800px;}
+  60% {left:800px; left: 600;}
+  100% {left:200px; left:400px;}
+}
+
+        
+	</style>
+
+    
+
+</head>
+
+<body>
+
+<!--titul-->
+<table class="taula">
+    <tr>
+        <td class="un">A</td>
+        <td class="dos">C</td>
+        <td class="tres">O</td>
+        <td class="quatre">R</td>
+        <td class="cinc">R</td>
+        <td class="sis">A</td>
+        <td class="set">L</td>
+        <td class="vuit">A</td>
+        <td class="nou">D</td>
+        <td class="deu">O</td>
+    </tr>
+    
+</table>
+<br>
+<br>
+<!--DivsEpileptics-->
+<table>
+    <tr>
+	<div class="barra" style="background-color: #FF8800; animation-delay: 0.1s;"></div>
+	<div class="efecte" style="background-color: #FFFF00; animation-delay: 0.2s;"></div>
+	<div class="barra" style="background-color: #00FF00; animation-delay: 0.3s;"></div>
+	<div class="efecte" style="background-color: #0000FF; animation-delay: 0.4s;"></div>
+	<div class="barra" style="background-color: #FF00FF; animation-delay: 0.5s;"></div>
+	<div class="efecte" style="background-color: #00FFFF; animation-delay: 0.6s;"></div>
+	<div class="barra" style="background-color: #FFFFFF; animation-delay: 0.7s;"></div>
+</tr>
+</table>
+
+<br><br><br><br>
+<!--2 Objectes en moviment-->
+<div><img class="icono" src="m60.png" alt=""></div>
+
+
+<br>
+<br>
+<!-- video de YouTube -->
+<div>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/yLVvYOhY2Hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<br>
+<!--Audio MP3 sobre la pagina-->
+
+
+	<audio class="audio" controls>
+		<source src="2725.mp3" type="audio/mp3">
+	
+	</audio>
+    
+</body>
+</html>
+
+
+
